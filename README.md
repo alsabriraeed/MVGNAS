@@ -7,12 +7,16 @@
 <br>
 <div align=left> <img src="pic/MVGNAS.svg" height="100%" width="100%"/> </div>
 
-
+##  Instructions
+The code has been tested with Python 3. To install the dependencies, please run:
+```
+pip install -r requirements.txt
+```
 
 ## Running the Experiment
-**1.Searching the GNN Architecture**
+For training, please refer to the scripts 'main.py' 
 ```python
 python main.py
 ```
 
-Note: more details about will be added soon.
+Note: more details will be added soon.
