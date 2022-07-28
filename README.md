@@ -5,13 +5,13 @@
 - The framework of MVGNAS is as follows:
 
 <br>
-<div align=left> <img src="pic/MVGNAS.svg" height="100%" width="100%"/> </div>
+<div align=left> <img src="pic/MVGNAS.SVG" height="100%" width="100%"/> </div>
 
-##  Instructions
+<!-- ##  Instructions
 The code has been tested with Python 3. To install the dependencies, please run:
 ```
 pip install -r requirements.txt
-```
+``` -->
 
 ## Running the Experiment
 For training, please refer to the scripts 'main.py' 
