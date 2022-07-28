@@ -14,7 +14,7 @@ pip install -r requirements.txt
 ``` -->
 
 ## Running the Experiment
-For training, please refer to the scripts 'main.py' 
+For training, please refer to the script 'main.py' 
 ```python
 python main.py
 ```
