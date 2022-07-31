@@ -1,4 +1,3 @@
-# import dgl
 import json
 import pickle
 import torch
@@ -11,7 +10,6 @@ from ERExtraction.utilsRE import *
 from constants import *      
 from ERExtraction.base import *
 from ERExtraction.helpers import *
-# from external_knowledge import *
 from ERExtraction.gnn import GNN
 from search_space.search_space import gnn_map, act_map
 
