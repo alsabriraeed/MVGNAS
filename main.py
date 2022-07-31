@@ -57,15 +57,15 @@ def register_default_args(parser):
     parser.add_argument('--derive_finally', type=bool, default=True)
     parser.add_argument('--derive_from_history', type=bool, default=True)
 
-    parser.add_argument("--epochs", type=int, default=30,        
+    parser.add_argument("--epochs", type=int, default=50,        
                         help="number of training epochs")               
-    parser.add_argument("--retrain_epochs", type=int, default=30,    
+    parser.add_argument("--retrain_epochs", type=int, default=50,    
                         help="number of training epochs")          
     parser.add_argument("--multi_label", type=bool, default=False,
                         help="multi_label or single_label task")
     parser.add_argument("--residual", action="store_false",
                         help="use residual connection")     
-    parser.add_argument("--in-drop", type=float, default=0.6, #0.6         
+    parser.add_argument("--in-drop", type=float, default=0.6,          
                         help="input feature dropout")
     parser.add_argument("--lr", type=float, default=0.005, 
                         help="learning rate") #0.005      
@@ -73,7 +73,7 @@ def register_default_args(parser):
                         help="learning rate")    
     parser.add_argument("--optim_file", type=str, default="opt_ADE_test.pkl",
                         help="optimizer save path")     
-    parser.add_argument('--weight_decay', type=float, default=5e-4) #5e-4      
+    parser.add_argument('--weight_decay', type=float, default=5e-4)       
     parser.add_argument('--max_param', type=float, default=5E6)                
     parser.add_argument('--supervised', type=bool, default=True)        
     parser.add_argument('--submanager_log_file', type=str, default=f"sub_manager_logger_file_{time.time()}.txt")    
@@ -86,7 +86,7 @@ def register_default_args1(parser1):
 
 def main(args, configs):  # pylint:disable=redefined-outer-name                  
 
-    if args.cuda and not torch.cuda.is_available():  # cuda is not available
+    if args.cuda and not torch.cuda.is_available():  
         args.cuda = False        
     torch.manual_seed(args.random_seed)
     if args.cuda:
