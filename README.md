@@ -47,6 +47,16 @@ pip install torch==1.8.1+cu102 torchvision==0.9.1+cu102 torchaudio==0.8.1 -f htt
 ```python
 pip install torch-scatter==2.0.9 torch-sparse==0.6.12 torch-cluster==1.5.9 torch-spline-conv==1.2.1 torch-geometric==2.0.2 -f https://data.pyg.org/whl/torch-1.8.0+cu102.html
 ```
+**5. transformers:** execute the following command in your conda env automsr
+```python
+pip install transformers
+```
+
+**6. pyhocon:** execute the following command in your conda env automsr
+```python
+pip install pyhocon
+```
+
 
 ## Running the Experiment
 For training, please refer to the script 'main.py' 
