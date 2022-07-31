@@ -321,7 +321,7 @@ class Trainer(object):
                 best_score = tmp_score
                 best_structure = actions
 
-        print("best structure:" + str(best_structure))
+        print("best model:" + str(best_structure))
         # train from scratch to get the final score
         np.random.seed(123)
         torch.manual_seed(123)
