@@ -113,7 +113,6 @@ class Trainer(object):
         if self.args.predict_hyper:
             actual_action["action"] = gnn[:-3]    
             actual_action["hyper_param"] = gnn[-3:]
-            print("actual_action: ", actual_action)
         else:
             actual_action["action"] = gnn         
         return actual_action
