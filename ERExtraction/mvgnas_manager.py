@@ -57,7 +57,7 @@ class GNNModule(object):
         origin_action = actions
         actions = process_action(actions, format, self.args)      
         GNNmodel = actions      
-        print("train action:", actions)        
+        print("Model:", actions)        
         try:          
             GNNmodel, val_acc,best_dev_m_score,best_dev_rel_score = self.run_model(self,actions)
 
