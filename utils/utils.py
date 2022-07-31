@@ -5,13 +5,6 @@ import scipy.sparse as sp
 from scipy.sparse.linalg.eigen.arpack import eigsh
 import sys
 import re
-# sys.path.append(r'C:\Users\Raeed\codes\GraphNASTextclass')
-# /public/home/hpc204708010/GraphNASTextclass/graphnas/
-sys.path.append(r'/public/home/hpc204708010/GraphNASTextclass')
-sys.path.append(r'/public/home/hpc204708010/GraphNASTextclass/graphnas/')
-sys.path.append(r'/public/home/hpc204708010/GraphNASTextclass/graphnas_variants')
-sys.path.append(r'/public/home/hpc204708010/GraphNASTextclass/graphnas_variants/macro_graphnas/pyg')
-sys.path.append(r'/public/home/hpc204708010/GraphNASTextclass/graphnas/utils')
 
 def parse_index_file(filename):
     """Parse index file."""
