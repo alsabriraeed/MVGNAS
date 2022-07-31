@@ -57,6 +57,11 @@ pip install transformers
 pip install pyhocon
 ```
 
+**7. networkx:** execute the following command in your conda env mvgnas
+```python
+pip install networkx
+```
+
 
 ## Running the Experiment
 For training, please refer to the script 'main.py' 
