@@ -66,7 +66,7 @@ pip install networkx
 ## Running the Experiment
 For training, please refer to the script 'main.py' 
 ```python
-python main.py
+python main.py --dataset ade
 ```
 
 Note: more details will be added soon.
