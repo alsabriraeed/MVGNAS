@@ -45,7 +45,7 @@ def register_default_args(parser):
                         help="calling the model directly")
     parser.add_argument('--ema_baseline_decay', type=float, default=0.95)
     parser.add_argument('--discount', type=float, default=1.0)          
-    parser.add_argument('--controller_max_step', type=int, default=5, 
+    parser.add_argument('--controller_max_step', type=int, default=30, 
                         help='step for controller parameters')                  
     parser.add_argument('--controller_optim', type=str, default='adam')
     parser.add_argument('--controller_lr', type=float, default=3.5e-4,
@@ -53,7 +53,7 @@ def register_default_args(parser):
     parser.add_argument('--controller_grad_clip', type=float, default=0)
     parser.add_argument('--tanh_c', type=float, default=2.5)
     parser.add_argument('--softmax_temperature', type=float, default=5.0)
-    parser.add_argument('--derive_num_sample', type=int, default=5) 
+    parser.add_argument('--derive_num_sample', type=int, default=30) 
     parser.add_argument('--derive_finally', type=bool, default=True)
     parser.add_argument('--derive_from_history', type=bool, default=True)
 
