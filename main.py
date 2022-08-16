@@ -23,7 +23,7 @@ def build_args():
 def register_default_args(parser):
     parser.add_argument('--mode', type=str, default='train',
                         choices=['train', 'derive'],
-                        help='train: Training GraphNAS, derive: Deriving Architectures')
+                        help='train: Training MVGNAS, derive: Deriving Architectures')
     parser.add_argument('--random_seed', type=int, default=123)
     parser.add_argument("--cuda", type=bool, default=True, required=False,
                         help="run in cuda mode")
